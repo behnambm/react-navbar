@@ -1,13 +1,64 @@
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+}
+
+@font-face {
+  font-family: 'San Francisco bold';
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, 'San Francisco', BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #777;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  padding: 5px;
+  margin: 0 3px;
+}
+nav {
+  padding: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-center {
+  display: flex;
+}
+
+.nav-header {
+  flex-grow: 1;
+}
+.nav-header h2 {
+  font-family: 'San Francisco bold';
+}
+
+.nav-links {
+  flex-grow: 1;
+}
+
+.social-icons {
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.social-icons li {
+  margin: 0;
 }
