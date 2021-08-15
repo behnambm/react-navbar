@@ -1,0 +1,99 @@
+a {
+  color: #777;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  padding: 5px;
+  margin: 0 3px;
+}
+nav {
+  padding: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.nav-center {
+  display: flex;
+}
+
+.nav-header {
+  flex-grow: 1;
+}
+.nav-header h2 {
+  font-family: 'San Francisco bold';
+}
+
+.nav-links {
+  flex-grow: 1;
+  transition: all 0.8s cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    height: auto !important;
+  }
+}
+.nav-links .links li a {
+  font-size: 1.1rem;
+}
+
+.social-icons {
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.social-icons li {
+  margin: 0;
+}
+
+.bar-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+  padding: 8px 20px;
+}
+@media (max-width: 768px) {
+  .social-icons {
+    display: none;
+  }
+  .nav-center {
+    display: block;
+  }
+  .nav-links {
+    height: 0;
+  }
+  .nav-links .links {
+    display: block;
+  }
+  .nav-links .links li {
+    margin: 2px 0;
+    padding: 0;
+    border-radius: 2px;
+  }
+  .nav-links .links li:hover {
+    background-color: #a2cef7;
+  }
+  .nav-links .links li:hover a {
+    margin-left: 20px;
+  }
+  .nav-links .links li a {
+    display: block;
+    padding: 5px;
+    color: #1b5c99;
+    transition: all 0.8s;
+  }
+
+  .bar-btn {
+    display: block;
+  }
+  .nav-header {
+    position: relative;
+  }
+}
